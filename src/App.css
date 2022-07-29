@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.app {
+  top: 0;
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  font-size: calc(20px + 2vmin);
+  line-height: 2;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
+.app-logo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+@keyframes app-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+.timer {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px;
+  text-align: center;
+  width: 85vw;
+  border-radius: 10px;
+}
+
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 25%;
+  float: left;
+}
+
+.box {
+  display: inline-block;
+  margin: 10px;
+  padding: 10%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 300;
+  padding: calc(10% + 10px);
+  border-radius: 50%;
+}
+
+.box p {
+  font-size: calc(16px + 2vmin);
+  margin: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(width * 0.05);
+  font-weight: 700;
+  margin: 10px;
+}
+
+footer {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.295);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  background-color: #efefef11;
+  text-align: center;
 }
