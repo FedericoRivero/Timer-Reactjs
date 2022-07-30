@@ -7,10 +7,10 @@ function App() {
       <div className="container">
         <h1 className="header">Happy New Year in</h1>
         <Timer />
-        <footer>
-          <p>Federico Rivero &copy; 2022</p>
-        </footer>
       </div>
+      <footer>
+        <p>Federico Rivero &copy; 2022</p>
+      </footer>
     </div>
   );
 }

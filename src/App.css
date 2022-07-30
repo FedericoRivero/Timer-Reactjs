@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html,
 body {
   height: 100%;
@@ -103,11 +108,16 @@ body {
 }
 
 footer {
+  display: flex;
   position: absolute;
-  color: rgba(255, 255, 255, 0.295);
   right: 0;
   bottom: 0;
   left: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.295);
   padding: 0.5rem;
   background-color: #efefef11;
   text-align: center;
